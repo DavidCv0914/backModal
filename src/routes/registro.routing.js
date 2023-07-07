@@ -1,6 +1,8 @@
 import { Router } from "express";
-import { getEmpresa } from "../controllers/regisrtro.js";
+import { getEmpresa,getPerson,getDatos } from "../controllers/regisrtro.js";
 
 export const registro = Router()
 
-registro.post("/getEmpresa", getEmpresa)
+registro.post("/getEmpresa", getEmpresa);
+registro.post("/getPerson", getPerson);
+registro.post("/getDatos", getDatos);
